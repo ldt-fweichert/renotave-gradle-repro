@@ -1,0 +1,9 @@
+{
+  "extends": ["config:best-practices"],
+  "packageRules": [
+    {
+      "matchManagers": ["gradle"],
+      "rangeStrategy": "bump"
+    }
+  ]
+}
