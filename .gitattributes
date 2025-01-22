@@ -10,3 +10,5 @@
 # Binary files should be left untouched
 *.jar           binary
 
+# Set all other to lf
+* text=auto eol=lf

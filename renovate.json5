@@ -15,12 +15,7 @@
         'io.ktor:ktor-server-netty',
       ],
       enabled: true,
-    },
-    {
-      matchManagers: [
-        'gradle',
-      ],
       rangeStrategy: 'pin',
-    },
+    }
   ],
 }
