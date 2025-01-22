@@ -2,6 +2,14 @@
   "extends": ["config:best-practices"],
   "packageRules": [
     {
+      "packagePatterns": ['*'],
+      "enabled": false,
+    },
+    {
+      "matchPackageNames": ["io.ktor:ktor-server-netty"],
+      "enabled": true,
+    },
+    {
       "matchManagers": ["gradle"],
       "rangeStrategy": "bump"
     }
