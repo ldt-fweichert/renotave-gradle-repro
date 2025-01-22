@@ -1,7 +1,7 @@
 {
   extends: [
     'config:best-practices',
-    'config:disableRateLimiting'
+    ':disableRateLimiting'
   ],
   packageRules: [
     {
