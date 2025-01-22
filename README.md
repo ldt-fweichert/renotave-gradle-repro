@@ -9,5 +9,5 @@ The 'bump' strategy is not implemented, and the [versions](app/build.gradle.kts)
 The 'bump' strategy is supported, the [versions](app/build.gradle.kts) are not pinned but the bounds are adjusted accordingly instead
 
 ## Link to the Renovate issue or Discussion
-[Link to the Renovate Discussion here.](https://github.com/renovatebot/renovate/discussions/24781)
+[Link to the Renovate Discussion here.](https://github.com/renovatebot/renovate/discussions/24781) \
 [Link to the Pull Request here](https://github.com/renovatebot/renovate/pull/33453)
