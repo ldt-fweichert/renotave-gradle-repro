@@ -15,7 +15,7 @@
         'io.ktor:ktor-server-netty',
       ],
       enabled: true,
-      rangeStrategy: 'pin',
+      rangeStrategy: 'bump',
     }
   ],
 }
