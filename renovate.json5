@@ -19,7 +19,7 @@
       matchManagers: [
         'gradle',
       ],
-      rangeStrategy: 'bump',
+      rangeStrategy: 'pin',
     },
   ],
 }
