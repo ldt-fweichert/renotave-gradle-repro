@@ -1,17 +1,25 @@
 {
-  "extends": ["config:best-practices"],
-  "packageRules": [
+  extends: [
+    'config:best-practices',
+  ],
+  packageRules: [
     {
-      "packagePatterns": ['*'],
-      "enabled": false,
+      enabled: false,
+      matchPackageNames: [
+        '*',
+      ],
     },
     {
-      "matchPackageNames": ["io.ktor:ktor-server-netty"],
-      "enabled": true,
+      matchPackageNames: [
+        'io.ktor:ktor-server-netty',
+      ],
+      enabled: true,
     },
     {
-      "matchManagers": ["gradle"],
-      "rangeStrategy": "bump"
-    }
-  ]
+      matchManagers: [
+        'gradle',
+      ],
+      rangeStrategy: 'bump',
+    },
+  ],
 }
