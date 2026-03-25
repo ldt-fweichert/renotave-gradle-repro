@@ -1,12 +1,24 @@
-# Reproduction Repo for [#24781](https://github.com/renovatebot/renovate/discussions/24781)
+# Reproduction Repo for Gradle '!!' version notation
+Gradle supports describing `strictly` and `preferred` version constraints using a shorthand.
+The behavior briefly explained in the [documentation](https://docs.gradle.org/current/userguide/dependency_versions.html#sec:rich-version-constraints).
+```kotlin
+implementation("org.slf4j:slf4j-api:[1.7, 1.8[!!1.7.25")
+// is equivalent to
+implementation("org.slf4j:slf4j-api") {
+    version {
+        strictly("[1.7, 1.8[")
+        prefer("1.7.25")
+    }
+}
+```
 
 ## Current behavior
 
-The 'bump' strategy is not implemented, and the [versions](app/build.gradle.kts) are simply being pinned instead
+Renovate doesn't understand the dependency and ignores it entirely
 
 ## Expected behavior
 
-The 'bump' strategy is supported, the [versions](app/build.gradle.kts) are not pinned but the bounds are adjusted accordingly instead
+The base range is updated as expected with the `bump` strategy and the preferred version is increased as well
 
 ## Link to the Renovate issue or Discussion
 [Link to the Renovate Discussion here.](https://github.com/renovatebot/renovate/discussions/24781) \
