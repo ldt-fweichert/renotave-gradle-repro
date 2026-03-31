@@ -21,7 +21,7 @@ repositories {
 dependencies {
     // a maven-range-style gradle dependency version, expected to be updated accordingly using the bump strategy
     // the preferred version should also be updated
-    implementation("io.ktor:ktor-server-netty:[3.0.0, )!!3.0.0")
+    implementation("io.ktor:ktor-server-netty:[3.4.2,)!!3.4.2")
 
     // Use the Kotlin JUnit 5 integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
